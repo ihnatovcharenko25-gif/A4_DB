@@ -1,7 +1,11 @@
 overall structure:
 (erd as photo in repository)
+fact table deliveries with all ids references dim tables: orders, drones, customers (which is also referenced by each order), delivery_hub,
+drones also have drone inspections by maintenance_crew
 
-
+1:many - customer:orders
+many:many - drones:maintenace_crew
+1:1 - delivery:order
 
 
 
